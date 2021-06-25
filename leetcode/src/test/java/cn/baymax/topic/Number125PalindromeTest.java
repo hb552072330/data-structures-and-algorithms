@@ -1,14 +1,13 @@
 package cn.baymax.topic;
 
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Number_125_Test {
+public class Number125PalindromeTest {
     public static final String STR_1 = "A man, a plan, a canal: Panama";
     public static final String STR_2 = "race a car";
     public static final String STR_3 = "0P";
-    Number_125 number_125 = new Number_125();
+    Number125Palindrome number_125 = new Number125Palindrome();
     @Test
     public void testIsPalindrome() {
         Assert.assertTrue(number_125.isPalindrome(STR_1));
@@ -30,5 +29,9 @@ public class Number_125_Test {
         Assert.assertFalse(number_125.isPalindrome3(STR_3));
     }
 
+    @Test
+    public void  test(){
+        System.out.println("2009008645101103230100027".length());
+    }
 
 }

@@ -15,7 +15,7 @@ package cn.baymax.topic;
  * 输入: "race a car"
  * 输出: false
  */
-public class Number_125 {
+public class Number125Palindrome {
 
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();
