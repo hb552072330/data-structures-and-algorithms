@@ -27,7 +27,7 @@ public class Number146LRUCacheTest extends TestCase {
     }
 
     @Test
-    public void testLRUCache(){
+    public void testLRUCache() {
         Number146LRUCache lruCache = new Number146LRUCache(10);
         lruCache.put(10, 13);
         lruCache.put(3, 17);
@@ -86,12 +86,12 @@ public class Number146LRUCacheTest extends TestCase {
         list2.remove();
         System.out.println(list2);
         LinkedHashMap map = new LinkedHashMap(3, 0.75f, true);
-        map.put(1,1);
-        map.put(2,2);
-        map.put(3,3);
+        map.put(1, 1);
+        map.put(2, 2);
+        map.put(3, 3);
         System.out.println(map);
         map.get(2);
-        map.put(2,22);
+        map.put(2, 22);
         System.out.println(map);
         map.put(4, 4);
         System.out.println(map);

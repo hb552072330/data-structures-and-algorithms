@@ -8,6 +8,7 @@ public class Number125PalindromeTest {
     public static final String STR_2 = "race a car";
     public static final String STR_3 = "0P";
     Number125Palindrome number_125 = new Number125Palindrome();
+
     @Test
     public void testIsPalindrome() {
         Assert.assertTrue(number_125.isPalindrome(STR_1));
@@ -27,11 +28,6 @@ public class Number125PalindromeTest {
         Assert.assertTrue(number_125.isPalindrome3(STR_1));
         Assert.assertFalse(number_125.isPalindrome3(STR_2));
         Assert.assertFalse(number_125.isPalindrome3(STR_3));
-    }
-
-    @Test
-    public void  test(){
-        System.out.println("2009008645101103230100027".length());
     }
 
 }
