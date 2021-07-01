@@ -30,7 +30,7 @@ package cn.baymax.topic;
  * @data 2021/6/25
  */
 public class Number70ClimbStairs {
-
+    //滚动数组
     public int climbStairs(int n) {
         int res = 1, pre1 = 0, pre2 = 0;
         for (int i = 0; i < n; i++) {
