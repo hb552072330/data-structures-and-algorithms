@@ -2,21 +2,29 @@ package cn.baymax.topic;
 
 import org.junit.Test;
 
-import java.awt.image.LookupOp;
-
 import static org.junit.Assert.*;
 
 /**
  * @author zhanghongbing
- * @data 2021/7/1
+ * @data 2021/7/2
  */
-public class Number24SwapPairsTest {
+public class Number21MergeTwoListsTest {
 
     @Test
-    public void swapPairs() {
+    public void mergeTwoLists() {
+        ListNode listNode = generateListnode(5);
+        ListNode listNode2 = generateListnode(4);
+        loopNode(listNode);
+        loopNode(listNode2);
+        Number21MergeTwoLists number21MergeTwoLists = new Number21MergeTwoLists();
+        ListNode listNode1 = number21MergeTwoLists.mergeTwoLists(listNode, listNode2);
+        loopNode(listNode1);
+    }
+
+    private ListNode generateListnode(int amout) {
         ListNode listNode = null;
         ListNode currentNode = null;
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i < amout; i++) {
             ListNode newNode = new ListNode(i);
             if (listNode == null) {
                 currentNode = newNode;
@@ -28,13 +36,11 @@ public class Number24SwapPairsTest {
                 listNode = currentNode;
             }
         }
-        loopNode(listNode);
-        Number24SwapPairs number24SwapPairs = new Number24SwapPairs();
-        System.out.println("swapPairs");
-        loopNode(number24SwapPairs.swapPairs3(listNode));
+        return listNode;
     }
 
     private void loopNode(ListNode listNode) {
+        System.out.println("---");
         ListNode next = listNode.next;
         System.out.println(listNode.val);
         while (next != null) {
