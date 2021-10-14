@@ -1,4 +1,4 @@
-package cn.baymax.other;
+package cn.baymax.meituan;
 
 import java.util.Arrays;
 
