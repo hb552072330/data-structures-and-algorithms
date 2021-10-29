@@ -1,4 +1,4 @@
-package cn.baymax.other._reflect;
+package cn.baymax.example._reflect;
 
 /**
  * @author zhanghongbing

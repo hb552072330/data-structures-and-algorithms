@@ -1,4 +1,4 @@
-package cn.baymax.other._static;
+package cn.baymax.example._static;
 
 
 import java.util.ArrayList;

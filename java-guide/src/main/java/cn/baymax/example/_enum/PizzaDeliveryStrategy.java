@@ -1,4 +1,4 @@
-package cn.baymax.other._enum;
+package cn.baymax.example._enum;
 
 /**
  * @author zhanghongbing
