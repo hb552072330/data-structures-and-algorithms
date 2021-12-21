@@ -11,6 +11,7 @@
         <module>leetcode</module>
         <module>java-guide</module>
         <module>study-question</module>
+        <module>technical-point</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
