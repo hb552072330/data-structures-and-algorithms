@@ -1,4 +1,4 @@
-package cn.baymax.alibaba;
+package cn.baymax.question.alibaba;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;

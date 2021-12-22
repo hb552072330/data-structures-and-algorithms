@@ -1,4 +1,4 @@
-package cn.baymax.meituan;
+package cn.baymax.question.meituan;
 
 import java.util.Arrays;
 
