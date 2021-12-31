@@ -1,4 +1,4 @@
-package cn.baymax.base64;
+package cn.baymax.digest;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;

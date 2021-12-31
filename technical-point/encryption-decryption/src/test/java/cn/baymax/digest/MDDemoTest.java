@@ -1,4 +1,4 @@
-package cn.baymax.base64;
+package cn.baymax.digest;
 
 import junit.framework.TestCase;
 
