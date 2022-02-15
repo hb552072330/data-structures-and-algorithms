@@ -1,4 +1,4 @@
-package cn.baymax.example.test;
+package cn.baymax.test;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

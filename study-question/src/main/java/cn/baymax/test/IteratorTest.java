@@ -1,4 +1,4 @@
-package cn.baymax.example.test;
+package cn.baymax.test;
 
 
 import java.util.ArrayList;
