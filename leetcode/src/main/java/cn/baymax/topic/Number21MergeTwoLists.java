@@ -49,6 +49,8 @@ package cn.baymax.topic;
  * }
  */
 
+import cn.baymax.common.ListNode;
+
 /**
  * @author zhanghongbing
  * @data 2021/7/2

@@ -1,5 +1,6 @@
 package cn.baymax.topic;
 
+import cn.baymax.common.ListNode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,23 +1,15 @@
-package cn.baymax.topic;
+package cn.baymax.common;
 
-import cn.baymax.common.ListNode;
-import org.junit.Test;
-
-import java.awt.image.LookupOp;
-
-import static org.junit.Assert.*;
 
 /**
  * @author zhanghongbing
- * @data 2021/7/1
+ * @data 2022/3/3
  */
-public class Number24SwapPairsTest {
-
-    @Test
-    public void swapPairs() {
+public class ListNodeUtil {
+    public static ListNode generateListnode(int amout) {
         ListNode listNode = null;
         ListNode currentNode = null;
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i <= amout; i++) {
             ListNode newNode = new ListNode(i);
             if (listNode == null) {
                 currentNode = newNode;
@@ -29,13 +21,10 @@ public class Number24SwapPairsTest {
                 listNode = currentNode;
             }
         }
-        loopNode(listNode);
-        Number24SwapPairs number24SwapPairs = new Number24SwapPairs();
-        System.out.println("swapPairs");
-        loopNode(number24SwapPairs.swapPairs3(listNode));
+        return listNode;
     }
-
-    private void loopNode(ListNode listNode) {
+    public static void loopNode(ListNode listNode) {
+        System.out.println("---");
         ListNode next = listNode.next;
         System.out.println(listNode.val);
         while (next != null) {

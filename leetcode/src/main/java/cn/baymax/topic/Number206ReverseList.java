@@ -55,6 +55,8 @@ package cn.baymax.topic;
  * }
  */
 
+import cn.baymax.common.ListNode;
+
 /**
  * @author zhanghongbing
  * @data 2021/7/1
@@ -116,19 +118,3 @@ public class Number206ReverseList {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
