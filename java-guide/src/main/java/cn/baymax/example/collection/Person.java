@@ -32,12 +32,9 @@ public class Person {
         return age;
     }
     public static void main(String[] args) {
-        TreeMap<Person, String> treeMap = new TreeMap<>(new Comparator<Person>() {
-            @Override
-            public int compare(Person person1, Person person2) {
-                int num = person1.getAge() - person2.getAge();
-                return Integer.compare(num, 0);
-            }
+        TreeMap<Person, String> treeMap = new TreeMap<>((person1, person2) -> {
+            int num = person1.getAge() - person2.getAge();
+            return Integer.compare(num, 0);
         });
         treeMap.put(new Person(3), "person1");
         treeMap.put(new Person(18), "person2");

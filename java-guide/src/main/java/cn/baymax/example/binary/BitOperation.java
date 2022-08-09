@@ -63,5 +63,23 @@ public class BitOperation {
         System.out.println("Integer >>> 16:" + (Integer.MAX_VALUE >>> 16));
         System.out.println("MAX ^ (max >>> 16)" + (Integer.MAX_VALUE ^ (Integer.MAX_VALUE >>> 16)));
         System.out.println("MAX ^ (max >>> 16)" + BinaryUtils.int2BitStr(Integer.MAX_VALUE ^ (Integer.MAX_VALUE >>> 16)));
+
+        //
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println(BinaryUtils.int2BitStr(-536870912));
+        System.out.println(BinaryUtils.int2BitStr(536870911));
+        System.out.println(BinaryUtils.int2BitStr((1 << Integer.SIZE - 3) - 1));
+
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println("INTEGER      SIZE:" + BinaryUtils.int2BitStr(Integer.SIZE));
+        System.out.println("INTEGER  -3 +SIZE:" + BinaryUtils.int2BitStr(Integer.SIZE - 3));
+        System.out.println("INTEGER -1<< SIZE:" + BinaryUtils.int2BitStr(-1 << (Integer.SIZE - 3)));
+        System.out.println("INTEGER  0<< SIZE:" + BinaryUtils.int2BitStr(0 << (Integer.SIZE - 3)));
+        System.out.println("INTEGER  1<< SIZE:" + BinaryUtils.int2BitStr(1 << (Integer.SIZE - 3)));
+        System.out.println("INTEGER  2<< SIZE:" + BinaryUtils.int2BitStr(2 << (Integer.SIZE - 3)));
+        System.out.println("INTEGER  3<< SIZE:" + BinaryUtils.int2BitStr(3 << (Integer.SIZE - 3)));
+        System.out.println(BinaryUtils.int2BitStr(((1 << Integer.SIZE - 3) - 1)));
+        System.out.println(BinaryUtils.int2BitStr(~((1 << Integer.SIZE - 3) - 1)));
+
     }
 }
