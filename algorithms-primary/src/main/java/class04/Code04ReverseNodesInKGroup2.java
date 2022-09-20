@@ -4,6 +4,7 @@ package class04;
 /**
  * @author zhanghongbing
  * @data 2022/9/2
+ * 25
  * https://leetcode.cn/problems/reverse-nodes-in-k-group/
  */
 public class Code04ReverseNodesInKGroup2 {
@@ -24,6 +25,8 @@ public class Code04ReverseNodesInKGroup2 {
         }
     }
 
+    //运行成功: 测试用例:[1,2,3,4,5] 2 测试结果:[2,4,5] 期望结果:[2,1,4,3,5] stdout:
+
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode start = head;
         ListNode end = getKGroup(start, k);
@@ -31,7 +34,7 @@ public class Code04ReverseNodesInKGroup2 {
             return head;
         }
         head = end;
-        reverseGrop(start, end);
+        reverseGroup(start, end);
         ListNode endLast = start;
         while (endLast.next != null) {
             start = endLast.next;
@@ -39,14 +42,14 @@ public class Code04ReverseNodesInKGroup2 {
             if (end == null) {
                 return head;
             }
-            reverseGrop(start, end);
+            reverseGroup(start, end);
             endLast.next = end;
             endLast = start;
         }
         return head;
     }
 
-    private void reverseGrop(ListNode start, ListNode end) {
+    private void reverseGroup(ListNode start, ListNode end) {
         end = end.next;
         ListNode pre = null;
         ListNode cur = start;
