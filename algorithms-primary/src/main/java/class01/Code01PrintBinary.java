@@ -47,6 +47,22 @@ public class Code01PrintBinary {
         printBinary(-Integer.MAX_VALUE);
         printBinary(Integer.MIN_VALUE);
         printBinary(-Integer.MIN_VALUE);
+        System.out.println("~~~~");
+        printBinary(63);
+        printBinary(64);
+        printBinary(65 & 63);
+        printBinary(1 << (65 & 63));
+
+        printBinary(64 >> 6);
+
+        //printBinary(164 & 63);
+        //printBinary(164 % 64);
+        System.out.println("~~~~~~~~~~~");
+        System.out.println(3^4);
+        System.out.println(4^4);
+        System.out.println(4^5);
+
+
     }
 
 }
