@@ -14,6 +14,7 @@
         <module>technical-point</module>
         <module>design-mode</module>
         <module>algorithms-primary</module>
+        <module>assault-squad03</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
