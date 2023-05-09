@@ -1,6 +1,8 @@
 package cn.baymax.mac01;
 
-
+/**
+ * leetcode 875  注意Integer.MAX_VALUE问题
+ */
 public class Code05_KoKoEatingBananas {
     /**
      * 珂珂喜欢吃香蕉。这里有N堆香蕉，第 i 堆中有piles[i]根香蕉
