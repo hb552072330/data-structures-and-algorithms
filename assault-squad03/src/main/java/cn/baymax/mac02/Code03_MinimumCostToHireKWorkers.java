@@ -3,7 +3,8 @@ package cn.baymax.mac02;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.PriorityQueue;
-
+//https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/
+//857
 public class Code03_MinimumCostToHireKWorkers {
     //输入： quality = [10,20,5], wage = [70,50,30], k = 2
 //输出： 105.00000

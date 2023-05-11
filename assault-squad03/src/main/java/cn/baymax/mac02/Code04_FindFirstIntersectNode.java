@@ -1,5 +1,9 @@
 package cn.baymax.mac02;
 
+//https://leetcode.cn/problems/linked-list-cycle/
+//141
+//https://leetcode.cn/problems/intersection-of-two-linked-lists/
+//160
 public class Code04_FindFirstIntersectNode {
 
     class ListNode {

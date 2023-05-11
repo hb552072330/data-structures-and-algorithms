@@ -2,6 +2,7 @@ package cn.baymax.mac01;
 
 /**
  * leetcode 875  注意Integer.MAX_VALUE问题
+ * https://leetcode.cn/problems/koko-eating-bananas/
  */
 public class Code05_KoKoEatingBananas {
     /**
@@ -55,6 +56,7 @@ public class Code05_KoKoEatingBananas {
         return ans;
     }
 
+    // todo 必须用long这个边界问题
     public static long hours2(int[] piles, int speed) {
         long ans = 0;
         for (int pile : piles) {

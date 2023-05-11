@@ -1,5 +1,7 @@
 package cn.baymax.mac02;
 
+//https://leetcode.cn/problems/copy-list-with-random-pointer/
+//138
 public class Code07_CopyRandomList {
 
     static class Node {

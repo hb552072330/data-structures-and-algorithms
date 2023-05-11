@@ -2,6 +2,8 @@ package cn.baymax.mac02;
 
 import java.util.Stack;
 
+//https://leetcode.cn/problems/palindrome-linked-list/
+//234
 public class Code06_IsPalindromeList {
      static class ListNode {
         int val;
