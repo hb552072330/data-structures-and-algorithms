@@ -10,6 +10,9 @@ public class Code01_Swap {
     }
 
     public static void main(String[] args) {
+        System.out.println(1&5);
+        System.out.println(1&3);
+        System.out.println(1&52);
         printBinary(1);
         printBinary(-1);
         int a = 3, b = 5;
