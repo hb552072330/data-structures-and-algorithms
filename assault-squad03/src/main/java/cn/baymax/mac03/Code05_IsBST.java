@@ -1,5 +1,6 @@
 package cn.baymax.mac03;
-
+//https://leetcode.cn/problems/validate-binary-search-tree/
+//98
 public class Code05_IsBST {
 
     public boolean isValidBST(TreeNode root) {
