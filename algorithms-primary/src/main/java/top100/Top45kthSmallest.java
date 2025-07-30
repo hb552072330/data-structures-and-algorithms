@@ -2,11 +2,24 @@ package top100;
 
 public class Top45kthSmallest {
     public int kthSmallest(TreeNode root, int k) {
-        if (root == null || root.val < k) {
-            return 0;
-        }
+        this.k = k;
+        bst(root);
+        return res;
+    }
 
-        return kthSmallest(root.left, k);
+    int res, k;
+
+    public void bst(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        bst(node.left);
+        if (k == 0) {
+            return;
+        }
+        if (--k == 0)
+            res = node.val;
+        bst(node.right);
     }
 
 }
