@@ -58,65 +58,57 @@ import java.util.Map;
  * @author zhanghongbing
  * @data 2022/2/15
  */
-public class NumberII017ShortestString {
+public class NumberII017ShortestString2 {
     public String minWindow(String s, String t) {
-        int sn = s.length();
-        int tn = t.length();
 
-        //s.length < t.length 返回空串
-        if (sn < tn) {
+        int sl = s.length();
+        int tl = t.length();
+
+        if (sl < tl) {
             return new String();
         }
 
-        int need_cnt = tn;
-        Map<Character, Integer> need_char_cnt = new HashMap<>();
-        for (int i = 0; i < tn; i++) {
+        Map<Character, Integer> targetMap = new HashMap<>();
+        for (int i = 0; i < tl; i++) {
             char c = t.charAt(i);
-            //put key = c  value = c出现的次数 累加
-            need_char_cnt.put(c, need_char_cnt.getOrDefault(c, 0) + 1);
+            targetMap.put(c, targetMap.getOrDefault(c, 0) + 1);
         }
 
-        int res_start = -1;//窗口开始下标
-        int res_len = Integer.MAX_VALUE;//窗口长度
+        int startLen = -1;
+        int addLen = Integer.MAX_VALUE;
 
-        int l = 0;//窗口临时开始下标
-        for (int r = 0; r < sn; r++) {
-            if (need_char_cnt.containsKey(s.charAt(r)) == true) {
-                if (need_char_cnt.get(s.charAt(r)) > 0){//说明s未包含所有t的字符
-                    need_cnt--;
+        int currentWinStar = 0;
+        for (int current = 0; current < sl; current++) {
+            char c = s.charAt(current);
+            if (targetMap.containsKey(c)) {
+                if (targetMap.get(c) > 0) {
+                    tl--;
                 }
-
-                need_char_cnt.put(s.charAt(r), need_char_cnt.get(s.charAt(r)) - 1);
+                targetMap.put(c, targetMap.get(c) - 1);
             }
-
-            if (need_cnt == 0) {//s中的字符全部包含t的字符集
-                while (true) {
-                    if (need_char_cnt.containsKey(s.charAt(l)) == false)
-                        l++;
-                    else {
-
-                        if (need_char_cnt.get(s.charAt(l)) < 0) {//字符多次出现缩小窗口大小
-                            need_char_cnt.put(s.charAt(l), need_char_cnt.get(s.charAt(l)) + 1);
-                            l++;
+            if (tl == 0) {
+                while (true){
+                    if (targetMap.containsKey(s.charAt(currentWinStar))) {
+                        if (targetMap.get(s.charAt(currentWinStar)) < 0) {
+                            targetMap.put(s.charAt(currentWinStar), targetMap.get(s.charAt(currentWinStar)) + 1);
+                            currentWinStar++;
                         } else {
                             break;
                         }
+
+                    } else {
+                        currentWinStar++;
                     }
                 }
-                //r当前循环
-                //l窗口开始下标
-                //res_len 窗口长度
-                if (r - l + 1 < res_len) {
-                    res_len = r - l + 1;
-                    res_start = l;
+                if (current - currentWinStar + 1 < addLen) {
+                    startLen = currentWinStar;
+                    addLen = current - currentWinStar + 1;
                 }
             }
         }
-
-        if (res_start == -1) {
+        if (startLen == -1) {
             return new String();
         }
-        return s.substring(res_start, res_start + res_len);
+        return s.substring(startLen, startLen + addLen);
     }
-
 }

@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class NumberII017ShortestString1Test extends TestCase {
 
     public void testMinWindow() {
-        System.out.println(new NumberII017ShortestString1().minWindow("ADOBECODEBANC", "ABC"));
+        System.out.println(new NumberII017ShortestString2().minWindow("ADOBECODEBANC", "ABC"));
 
     }
 }

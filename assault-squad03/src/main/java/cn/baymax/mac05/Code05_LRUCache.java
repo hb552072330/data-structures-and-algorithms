@@ -2,7 +2,8 @@ package cn.baymax.mac05;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//https://leetcode.cn/problems/lru-cache/
+//146
 public class Code05_LRUCache {
     public class LRUCache {
 
